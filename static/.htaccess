@@ -1,0 +1,44 @@
+# Disable Directory Browsing
+Options -Indexes
+
+# 404 Page
+ErrorDocument 404 /404.html
+
+# HSTS Headers
+Header always set Strict-Transport-Security "max-age=63072000; includeSubdomains; preload"
+
+# X-Frame-Options Headers
+Header always append X-Frame-Options SAMEORIGIN
+
+# Prevent Browsers from detecting files as scripts and stylesheets, leading to XSS attacks
+Header always set X-Content-Type-Options: nosniff
+
+# X-XSS-Protection
+Header always set X-XSS-Protection "1; mode=block"
+
+# CSP Policy Headers
+Header always set Content-Security-Policy "upgrade-insecure-requests;default-src 'none';object-src 'none';connect-src 'self' *.google-analytics.com;img-src 'self' data: blob:;media-src 'self' data: blob:;frame-ancestors 'self';base-uri 'self';form-action 'self';font-src 'self';frame-src 'self';style-src 'self' 'unsafe-inline';script-src 'self' *.twitter.com *.google-analytics.com *.google.com *.googlesyndication.com *.googletagservices.com *.googletagmanager.com;"
+
+# Referrer Policy
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+# HTTP to HTTPS
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://gyni.xyz/$1 [R,L]
+
+# Remove Server Info Header
+Header unset Server
+
+# For if the server is down
+Header always set Server "No peeking!"
+
+# Chain of Proxies Error Debug
+ServerSignature Off
+
+# non-sense
+Header set Welcome "Hello there, why are you looking at my headers? hmmm"
+
+<FilesMatch "\.js$">
+  ForceType application/javascript
+</FilesMatch>

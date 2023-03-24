@@ -1,0 +1,128 @@
+baseURL: "https://gyni.xyz/"
+languageCode: "en-us"
+title: "Gyni's Blog"
+theme: "papermod"
+publishDir: "/var/www/html"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: "Gyni's Blog"
+  description: "Programming & Hacking Blog"
+  keywords: [Blog, Portfolio]
+  author: "Ali Abdelkarim" # ["Me", "You"] # multiple authors
+  images: ["/images/icons/logo-128.png"]
+  DateFormat: "January, 2, 2006"
+  disableThemeToggle: true
+
+  ShowDescriptionInPost: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: true
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+  
+  ShareButtons:
+    - twitter
+    - reddit
+    - telegram
+    - whatsapp
+    - facebook
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/images/icons/logo-128.png"
+    favicon16x16: "/images/icons/logo-16.png"
+    favicon32x32: "/images/icons/logo-32.png"
+    apple_touch_icon: "/images/icons/logo-64.png"
+    safari_pinned_tab: "/images/icons/logo-64.png"
+
+  label:
+    text: " "
+    icon: "/images/icons/logo-128.png"
+    iconHeight: 35
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Welcome to Gyni's Blog!"
+    Content: "This blog is mainly about Programming, Hacking and anything tech related."
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/mr_gyni"
+    - name: github
+      url: "https://github.com/inGyni"
+    - name: hackthebox
+      url: "https://app.hackthebox.com/profile/72509"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+    
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+  profileMode:
+      enabled: true
+      title: "Welcome to Gyni's Blog!" # optional default will be site title
+      subtitle: "This blog is mainly about Programming, Hacking and anything tech related."
+      imageUrl: "/images/icons/logo-128.png" # optional
+      imageTitle: "Mr. Gyni" # optional
+      imageWidth: 120 # custom size
+      imageHeight: 120 # custom size
+      buttons:
+          - name: Posts
+            url: "/posts/"
+          - name: Search
+            url: "/search/"
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
+    - identifier: posts
+      name: Blog
+      url: /posts/
+      weight: 20
+  
+outputs:
+  home:
+    - html
+    - json
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
