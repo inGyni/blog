@@ -2,7 +2,6 @@ baseURL: "https://gyni.xyz/"
 languageCode: "en-us"
 title: "Gyni's Blog"
 theme: "papermod"
-publishDir: "/var/www/html"
 
 enableRobotsTXT: true
 buildDrafts: false
