@@ -9,11 +9,14 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete contents of public branch
-        uses: enrico-candino/delete-branch-action@v1.0
+      - name: Delete public branch
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          branch-name: public
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: "Delete public branch"
+          branch: public
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+        if: github.ref == 'refs/heads/source' # delete only when push to source branch
+
       - name: Checkout source code
         uses: actions/checkout@v2
         with:
