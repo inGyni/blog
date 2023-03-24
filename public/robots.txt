@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://gyni.xyz/sitemap.xml

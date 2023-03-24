@@ -29,3 +29,6 @@ jobs:
           publish_dir: ./public
           publish_branch: public
           clean: true
+
+      - name: Remove public directory from source branch
+        run: rm -rf public
