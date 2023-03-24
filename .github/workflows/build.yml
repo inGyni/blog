@@ -9,6 +9,11 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Delete contents of public branch
+        uses: enrico-candino/delete-branch-action@v1.0
+        with:
+          branch-name: public
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Checkout source code
         uses: actions/checkout@v2
         with:
