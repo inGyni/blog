@@ -100,6 +100,11 @@ params:
             url: "/posts/"
           - name: Search
             url: "/search/"
+
+  editPost: 
+     URL: "https://github.com/inGyni/ingyni.github.io/tree/source/content" 
+     Text: "Edit this blog" # edit text 
+     appendFilePath: true # to append file path to Edit link
 menu:
   main:
     - identifier: search
