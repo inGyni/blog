@@ -10,8 +10,6 @@
 {{- print "list" -}}
 {{- end -}}
 " id="top">
-    {{- $loadwebhookscript := slice (resources.Get "js/custom/loadwebhookscript.js") | resources.Concat "assets/js/custom/loadwebhookscript.js" }}
-    <script src="{{ $loadwebhookscript.RelPermalink }}" type="application/javascript"></script>
     {{- partialCached "header.html" . .Page -}}
     <main class="main">
         {{- block "main" . }}{{ end }}
