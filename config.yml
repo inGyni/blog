@@ -1,7 +1,7 @@
 baseURL: "https://ingyni.github.io/"
 languageCode: "en-us"
 title: "Gyni's Blog"
-theme: "papermod"
+theme: "papermodded"
 
 enableRobotsTXT: true
 buildDrafts: false

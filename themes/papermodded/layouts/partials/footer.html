@@ -1,0 +1,19 @@
+{{- if not (.Param "hideFooter") }}
+<footer class="footer">
+    {{- if site.Copyright }}
+    <span>{{ site.Copyright | markdownify }}</span>
+    {{- else }}
+    <span>Copyright &copy; 2021 - {{ now.Year }} Ali Abdelkarim | Contact at <a href="mailto:ali@gyni.xyz">ali@gyni.xyz</a></span>
+    {{- end }}
+</footer>
+{{- end }}
+
+{{- partial "extend_footer.html" . }}
+
+{{- $menucsp := slice (resources.Get "js/csp-required/menu-csp.js") | resources.Concat "assets/js/csp-required/menu-csp.js" }}
+<script defer crossorigin="anonymous" src="{{ $menucsp.RelPermalink }}"></script>
+
+{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
+{{- $codecopy := slice (resources.Get "js/csp-required/codecopy-csp.js") | resources.Concat "assets/js/csp-required/codecopy-csp.js" }}
+<script defer crossorigin="anonymous" src="{{ $codecopy.RelPermalink }}"></script>
+{{- end }}
