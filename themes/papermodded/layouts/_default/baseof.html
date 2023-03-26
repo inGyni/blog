@@ -3,7 +3,7 @@
 
 <head>
     {{ if (.Param "googleAnalyticsEnabled") }}
-    {{ partial "googleAnalytics/googleAnalytics.html" . }}
+    {{ partial "googleAnalytics.html" . }}
     {{ end }}
     {{- partial "head.html" . }}
 </head>
