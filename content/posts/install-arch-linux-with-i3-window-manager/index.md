@@ -16,6 +16,7 @@ categories:
 Installing Arch is not as hard as people might think, It's sometimes intimidating but following a few steps will help you understand the process easily. In this guide, I will explain each step of installing Arch and tell you the best practices while doing so.
 
 ## Requirements
+
 You'll need a few things to install Arch on your computer:
 
 1. Internet (Ethernet is Recommended)
@@ -24,7 +25,7 @@ You'll need a few things to install Arch on your computer:
 
 ## Downloading the Arch Linux ISO
 
-There are a few ways to download Arch, the most common ways are Torrenting and HTTP Direct Downloads. If you are using HTTP Direct Downloads, select the closest server to you, and make sure to compare the checksum after the file has been downloaded. You can find the download page [here](https://archlinux.org/download/). 
+There are a few ways to download Arch, the most common ways are Torrenting and HTTP Direct Downloads. If you are using HTTP Direct Downloads, select the closest server to you, and make sure to compare the checksum after the file has been downloaded. You can find the download page [here](https://archlinux.org/download/).
 
 I will be using Arch version 2023.01.01
 
@@ -33,9 +34,7 @@ I will be using Arch version 2023.01.01
 To install Arch, you first need to write the ISO file to your USB Drive, to do so, you can use programs like [Rufus](https://rufus.ie/en/) or [Balena Etcher](https://www.balena.io/etcher). Both can do the same thing but Balena Etcher is easier to use if you've never done this before. I will show you how to flash using Rufus:
 
 **WARNING**
-
 _**This will erase everything on your USB Drive, please backup your files before continuing.**_
-
 
 Rufus may seem more advanced, but it is really simple, follow these simple steps:
 
@@ -61,7 +60,6 @@ If it says UEFI then select GPT in Rufus, otherwise select MBR and press START.
 ### Rufus Settings
 
 ![RUFUS SETTINGS](./images/image.png)
-
 
 ## Booting into Arch Linux Live Installer
 

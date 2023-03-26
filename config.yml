@@ -38,6 +38,10 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: false
+
+  # google analytics
+  googleAnalyticsEnabled: true
+  googleAnalytics: "G-3BS7PXNLNP"
   
   ShareButtons:
     - twitter
