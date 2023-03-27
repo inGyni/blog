@@ -2,9 +2,6 @@
 <html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
 
 <head>
-    {{ if (.Param "googleAnalyticsEnabled") }}
-    {{ partial "googleAnalytics.html" . }}
-    {{ end }}
     {{- partial "head.html" . }}
 </head>
 
