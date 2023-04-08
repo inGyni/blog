@@ -4,7 +4,7 @@ description: "Installing Arch is not as hard as people might think, It's sometim
 author: ["Ali Abdelkarim"]
 date: 2023-03-16T13:43:41.893Z
 lastmod: 2023-03-24T16:39:41.893Z
-draft: false
+draft: true
 tags:
   - Arch
 categories: 

@@ -20,3 +20,9 @@ Static files are in the `/static` directory.
 
 
 You can also edit posts from the blog by pressing the "Edit this blog" link at the top of a blog post.
+
+
+## LICENSE
+This blog is licensed under [**CC BY 4.0**](https://github.com/inGyni/ingyni.github.io/blob/source/LICENSE)
+
+Please give credit where credit is due.
