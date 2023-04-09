@@ -3,7 +3,10 @@
     {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
-    <span>Copyright &copy; 2021 - {{ now.Year }} Ali Abdelkarim | Contact at <a href="mailto:ali@gyni.xyz">ali@gyni.xyz</a></span>
+    <span>&copy; 2021 - {{ now.Year }} <a href="mailto:ali@gyni.xyz">Ali Abdelkarim</a>&nbsp;|&nbsp;<div href="https://github.com/inGyni/ingyni.github.io/blob/source/LICENSE" class="tooltip">Licensed under CC BY 4.0
+        <span class="tooltiptext" style="min-width: 25%;">Except where otherwise stated, This work is licensed under a Creative Commons Attribution 4.0 International License.</span>
+    </div>
+    </span>
     {{- end }}
 </footer>
 {{- end }}
