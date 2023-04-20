@@ -1,6 +1,6 @@
 # Gyni's Blog
 
-Welcome, this is the repository for [Gyni's Blog](https://blog.gyni.xyz).
+Welcome, this is the repository for [Gyni's Blog](https://blog.gyni.net).
 
 ## Contributions
 

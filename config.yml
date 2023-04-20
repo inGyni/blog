@@ -1,4 +1,4 @@
-baseURL: "https://blog.gyni.xyz/"
+baseURL: "https://blog.gyni.net/"
 languageCode: "en-us"
 title: "Gyni's Blog"
 theme: "papermodded"
@@ -40,7 +40,7 @@ params:
   tocopen: false
 
   # google analytics
-  googleAnalyticsEnabled: true
+  googleAnalyticsEnabled: false
   googleAnalytics: "G-3BS7PXNLNP"
   
   ShareButtons:
