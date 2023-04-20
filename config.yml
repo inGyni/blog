@@ -61,7 +61,7 @@ params:
 
   label:
     text: " "
-    icon: "/images/icons/logo-128.png"
+    icon: "/images/icons/logo-256.png"
     iconHeight: 35
 
   # home-info mode
@@ -95,7 +95,7 @@ params:
       enabled: true
       title: "Welcome to Gyni's Blog!" # optional default will be site title
       subtitle: "This blog is mainly about Programming, Cyber Security and anything tech related.\n\nThis blog is hosted on GitHub, you can find the source code [here](https://github.com/ingyni/ingyni.github.io).\n\nFeel free to make edits and contribute to the blog."
-      imageUrl: "/images/icons/logo-128.png" # optional
+      imageUrl: "/images/icons/logo-256.png" # optional
       imageTitle: "Mr. Gyni" # optional
       imageWidth: 120 # custom size
       imageHeight: 120 # custom size
