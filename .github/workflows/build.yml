@@ -2,8 +2,6 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches-ignore:
-      - '*'
   workflow_dispatch:
 
 permissions:
