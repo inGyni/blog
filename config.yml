@@ -1,7 +1,6 @@
 baseURL: "https://blog.gyni.net/"
 languageCode: "en-us"
 title: "Gyni's Blog"
-theme: "papermodded"
 
 enableRobotsTXT: true
 buildDrafts: false
