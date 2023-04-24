@@ -13,11 +13,9 @@ All pull requests will be reviewed and approved or denied depending on the conte
 
 Blog posts are in the `/content` directory.
 
-Theme is in the `/themes/papermodded` directory.
-
 Static files are in the `/static` directory.
 
-
+HTML, CSS, and JavaScript template files are in `/layouts` and `/assets`.
 
 You can also edit posts from the blog by pressing the "Edit this blog" link at the top of a blog post.
 
