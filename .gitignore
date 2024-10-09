@@ -4,3 +4,5 @@
 *.bak
 *.log
 resources/
+.hugo_build.lock
+/.vscode/

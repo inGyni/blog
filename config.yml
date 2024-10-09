@@ -16,7 +16,7 @@ params:
   title: "Gyni's Blog"
   description: "Programming & Hacking Blog"
   keywords: [Blog, Portfolio]
-  author: "Ali Abdelkarim" # ["Me", "You"] # multiple authors
+  author: "Gyni" # ["Me", "You"] # multiple authors
   images: ["/images/icons/logo-128.png"]
   DateFormat: "January, 2, 2006"
   disableThemeToggle: true
