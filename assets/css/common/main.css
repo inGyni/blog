@@ -1,120 +1,120 @@
 .main {
-    position: relative;
-    min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    max-width: calc(var(--main-width) + var(--gap) * 2);
-    margin: auto;
-    padding: var(--gap);
+  position: relative;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  max-width: calc(var(--main-width) + var(--gap) * 2);
+  margin: auto;
+  padding: var(--gap);
 }
 
 .page-header h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .pagination {
-    display: flex;
+  display: flex;
 }
 
 .pagination a {
-    color: var(--theme);
-    font-size: 13px;
-    line-height: 36px;
-    background: var(--primary);
-    border-radius: calc(36px / 2);
-    padding: 0 16px;
+  color: var(--theme);
+  font-size: 13px;
+  line-height: 36px;
+  background: var(--primary);
+  border-radius: calc(36px / 2);
+  padding: 0 16px;
 }
 
 .pagination .next {
-    margin-inline-start: auto;
+  margin-inline-start: auto;
 }
 
 .social-icons {
-    padding: 12px 0;
+  padding: 12px 0;
 }
 
 .social-icons a:not(:last-of-type) {
-    margin-inline-end: 12px;
+  margin-inline-end: 12px;
 }
 
 .social-icons a svg {
-    height: 26px;
-    width: 26px;
+  height: 26px;
+  width: 26px;
 }
 
 .social-icons a svg:hover {
-    transform: scale(0.95);
-    color: #888
+  transform: scale(0.95);
+  color: #888
 }
 
 code {
-    direction: ltr;
+  direction: ltr;
 }
 
 div.highlight,
 pre {
-    position: relative;
+  position: relative;
 }
 
 .copy-code {
-    display: none;
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(78, 78, 78, 0.8);
-    border-radius: var(--radius);
-    padding: 0 5px;
-    font-size: 14px;
-    user-select: none;
+  display: none;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(78, 78, 78, 0.8);
+  border-radius: var(--radius);
+  padding: 0 5px;
+  font-size: 14px;
+  user-select: none;
 }
 
 div.highlight:hover .copy-code,
 pre:hover .copy-code {
-    display: block;
+  display: block;
 }
 
 /* Tooltip container */
 .tooltip {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-    visibility: hidden;
-    max-width: 18vw;
-    background-color: #333;
-    color: #fff;
-    text-align: center; 
-    padding: 5px 5px;
-    border-radius: 6px;
-    font-size: 0.9rem;
+  visibility: hidden;
+  max-width: 18vw;
+  background-color: #333;
+  color: #fff;
+  text-align: center; 
+  padding: 5px 5px;
+  border-radius: 6px;
+  font-size: 0.9rem;
 
-    /* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    
-    /* Fade in tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 /* Tooltip arrow */
 .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
