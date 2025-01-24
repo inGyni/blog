@@ -1,14 +1,9 @@
 ---
 title: test
 description: ""
-author: ["Gyni"]
+author: "Gyni"
 date: 2023-03-16T13:43:41.893Z
-lastmod: 2023-03-24T16:39:41.893Z
 draft: true
-tags:
-  - Arch
-categories: 
-  - Linux
 ---
 
 ## Introduction

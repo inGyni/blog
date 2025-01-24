@@ -3,12 +3,7 @@ title: Install Arch Linux with i3 Window Manager
 description: "Installing Arch is not as hard as people might think, It's sometimes intimidating but following a few steps will help you understand the process easily."
 author: "Gyni"
 date: 2023-03-16T13:43:41.893Z
-lastmod: 2023-03-24T16:39:41.893Z
 draft: true
-tags:
-  - Arch
-categories: 
-  - Linux
 ---
 
 ## Introduction
@@ -72,6 +67,8 @@ If it says UEFI then select GPT in Rufus, otherwise select MBR and press START.
 ### Rufus Settings
 
 ![RUFUS SETTINGS](./images/image.png)
+
+{{< inTextImg height=500 url="./images/image.png" alt="Steve Francia" >}}
 
 ## Booting into Arch Linux Live Installer
 
