@@ -1,11 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-{{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
-<meta name="robots" content="index, follow">
-{{- else }}
-<meta name="robots" content="noindex, nofollow">
-{{- end }}
 
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
@@ -48,10 +43,15 @@
 <script defer crossorigin="anonymous" src="{{ $indexjs.RelPermalink }}" integrity="{{ $indexjs.Data.Integrity }}"></script>
 
 {{- /* Favicons */}}
-<link rel="icon" href="{{ site.Params.assets.favicon | default "favicon.ico" | absURL }}">
+<link rel="icon" href="{{ site.Params.assets.favicon | default "favicon-128x128.png" | absURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ site.Params.assets.favicon16x16 | default "favicon-16x16.png" | absURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ site.Params.assets.favicon32x32 | default "favicon-32x32.png" | absURL }}">
-<link rel="apple-touch-icon" href="{{ site.Params.assets.apple_touch_icon | default "apple-touch-icon.png" | absURL }}">
-<link rel="mask-icon" href="{{ site.Params.assets.safari_pinned_tab | default "safari-pinned-tab.svg" | absURL }}">
+<link rel="apple-touch-icon" href="{{ site.Params.assets.apple_touch_icon | default "favicon-64x64.png" | absURL }}">
+<link rel="mask-icon" href="{{ site.Params.assets.safari_pinned_tab | default "favicon-64x64.png" | absURL }}">
 <meta name="theme-color" content="{{ site.Params.assets.theme_color | default "#2e2e33" }}">
 <meta name="msapplication-TileColor" content="{{ site.Params.assets.msapplication_TileColor | default "#2e2e33" }}">
+
+{{- /* Open Graph */}}
+<meta property="og:title" content="{{ site.Params.homeInfoParams.Title }}">
+<meta property="og:description" content="{{ site.Params.homeInfoParams.Content }}">
+<meta property="og:image" content="{{ site.Params.assets.favicon | default "favicon-128x128.png" | absURL }}">
