@@ -1,8 +1,6 @@
 baseURL: "https://blog.gyni.net/"
-languageCode: "en-us"
 title: "Gyni's Blog"
 
-enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
@@ -19,15 +17,13 @@ params:
   author: "Gyni" # ["Me", "You"] # multiple authors
   DateFormat: "January, 2, 2006"
 
-  hidemeta: false
-  hideSummary: false
-
   assets:
-    favicon: "/images/icons/logo-128.png"
-    favicon16x16: "/images/icons/logo-16.png"
-    favicon32x32: "/images/icons/logo-32.png"
-    apple_touch_icon: "/images/icons/logo-64.png"
-    safari_pinned_tab: "/images/icons/logo-64.png"
+    logo: "/favicon-128x128.png"
+    favicon: "/favicon-128x128.png"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/favicon-64x64.png"
+    safari_pinned_tab: "/favicon-64x64.png"
 
   label:
     text: "Gyni's Blog"

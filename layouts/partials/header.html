@@ -1,5 +1,6 @@
 <header class="header">
-  <div class="title">
-    {{- (site.Params.label.text | default site.Title) -}}
-  </div>
+  <a href="{{- "/" | relURL -}}" class="logo">
+    <img class="logo-img" src="{{- (site.Params.assets.logo | default "/logo.png"  | absURL ) -}}" alt="Logo" />
+  </a>
+  <a href="{{- "/" | relURL -}}" class="header-text">{{- (site.Params.label.text | default site.Title) -}}</a>
 </header>
