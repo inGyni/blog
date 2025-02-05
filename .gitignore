@@ -6,4 +6,3 @@
 resources/
 .hugo_build.lock
 /.vscode/
-/.github/
