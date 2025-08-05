@@ -1,6 +1,6 @@
-# Gyni's Blog
+# Gyni's Portfolio and Blog
 
-Welcome, this is the repository for [Gyni's Blog](https://blog.gyni.net).
+Welcome, this is the repository for [gyni.net](https://gyni.net).
 
 ## Contributions
 
@@ -13,6 +13,6 @@ Blog posts are in the `/content/posts` directory.
 HTML, CSS, and JavaScript template files are in `/layouts` and `/assets`.
 
 ## LICENSE
-This blog is licensed under [**CC BY 4.0**](https://github.com/inGyni/ingyni.github.io/blob/source/LICENSE)
+This blog is licensed under [**CC BY 4.0**](https://github.com/inGyni/blog/blob/source/LICENSE)
 
 Please give credit where credit is due.
