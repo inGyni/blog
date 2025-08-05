@@ -28,12 +28,12 @@
   font-weight: 400;
   font-size: 14px;
   font-family: "Menlo", "Meslo LG", monospace;
+  line-height: 1.725;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   user-select: text !important;
   overflow-wrap: break-word;
   box-sizing: border-box;
-  line-height: 1.725;
   padding: 0;
 }
 

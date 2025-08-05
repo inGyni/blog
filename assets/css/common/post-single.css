@@ -6,11 +6,19 @@
 .post-title {
   margin-bottom: 2px;
   font-size: 40px;
+  color: #c9cacc;
+  font-family: "Menlo", "Meslo LG", monospace;
+  line-height: 1.725;
+  text-rendering: geometricPrecision;
 }
 
 .post-description {
   margin-top: 10px;
   margin-bottom: 5px;
+  color: #c9cacc;
+  font-family: "Menlo", "Meslo LG", monospace;
+  line-height: 1.725;
+  text-rendering: geometricPrecision;
 }
 
 .post-meta,
@@ -34,6 +42,10 @@
 
 .post-content {
   color: var(--content);
+  color: #c9cacc;
+  font-family: "Menlo", "Meslo LG", monospace;
+  line-height: 1.725;
+  text-rendering: geometricPrecision;
 }
 
 .post-content h3,
@@ -49,7 +61,14 @@
 }
 
 .post-content h2 {
-  margin: 32px auto 24px;
+  margin: 32px 0 24px;
+  font-size: 32px;
+}
+
+.post-content h2:before {
+  color: #8f8f8f;
+  content: "# ";
+  font-weight: bold;
   font-size: 32px;
 }
 

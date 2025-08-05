@@ -1,5 +1,5 @@
 baseURL: "https://gyni.net/"
-title: "Gyni's Blog"
+title: "Gyni"
 
 buildDrafts: false
 buildFuture: false
@@ -11,7 +11,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "Gyni's Blog"
+  title: "Gyni"
   description: "Programming & Hacking Blog"
   keywords: [Blog, Portfolio]
   author: "Gyni" # ["Me", "You"] # multiple authors
@@ -26,12 +26,11 @@ params:
     safari_pinned_tab: "/favicon-64x64.png"
 
   label:
-    text: "Gyni's Blog"
+    text: "Gyni"
 
   # home-info mode
   homeInfoParams:
-    Title: "Welcome to Gyni's Blog!"
-    Content: "This blog is made and written by Gyni, mainly about Programming, Hacking and anything tech related."
+    Title: "Welcome!"
 
 outputs:
   home:
