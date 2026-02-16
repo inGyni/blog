@@ -32,6 +32,12 @@ params:
   homeInfoParams:
     Title: "Welcome!"
 
+services:
+  googleAnalytics:
+    id: "G-XXXXXXXXXX" # Google Analytics ID
+  disqus:
+    shortname: "gyni" # Disqus shortname for comments
+
 outputs:
   home:
     - html

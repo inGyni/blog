@@ -18,6 +18,9 @@
   <div class="post-content">
     {{ .Content }}
   </div>
+  {{ if .Params.comments }}
+  {{ partial "disqus.html" . }}
+  {{ end }}
 </article>
 
 {{- end }}{{/* end main */}}

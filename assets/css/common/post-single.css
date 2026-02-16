@@ -8,7 +8,7 @@
   font-size: 40px;
   color: #c9cacc;
   font-family: "Menlo", "Meslo LG", monospace;
-  line-height: 1.725;
+  /* line-height: 1.725; */
   text-rendering: geometricPrecision;
 }
 
@@ -17,7 +17,7 @@
   margin-bottom: 5px;
   color: #c9cacc;
   font-family: "Menlo", "Meslo LG", monospace;
-  line-height: 1.725;
+  /* line-height: 1.725; */
   text-rendering: geometricPrecision;
 }
 
@@ -44,7 +44,7 @@
   color: var(--content);
   color: #c9cacc;
   font-family: "Menlo", "Meslo LG", monospace;
-  line-height: 1.725;
+  /* line-height: 1.725; */
   text-rendering: geometricPrecision;
 }
 
@@ -120,7 +120,7 @@
 }
 
 .post-content li {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .post-content li p {
@@ -157,7 +157,7 @@
 .post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
   min-width: 80px;
   padding: 12px 8px;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   border-bottom: 1px solid var(--border);
 }
 
@@ -214,7 +214,7 @@
   margin: auto 4px;
   padding: 4px 6px;
   font-size: 0.78em;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   background: var(--code-bg);
   border-radius: 2px;
 }
@@ -332,7 +332,7 @@
   padding-inline-end: 14px;
   color: var(--secondary);
   font-size: 14px;
-  line-height: 34px;
+  /* line-height: 34px; */
   background: var(--code-bg);
 }
 
@@ -379,7 +379,7 @@ h6:hover .anchor {
 .paginav {
   margin: 10px 0;
   display: flex;
-  line-height: 30px;
+  /* line-height: 30px; */
   border-radius: var(--radius);
 }
 
